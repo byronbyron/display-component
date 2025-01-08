@@ -8,5 +8,5 @@ export default {
   server: {
     port: 8080
   },
-  base: "/display-component/"
+  base: "/display-component/dist/"
 }
