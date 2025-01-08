@@ -5,8 +5,8 @@
   "homepage": "https://byronbyron.github.io/display-component/",
   "scripts": {
     "start": "vite",
-    "build": "vite build",
-    "deploy" : "gh-pages -d dist",
+    "build": "vite build --emptyOutDir",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,7 +15,7 @@
   "description": "",
   "devDependencies": {
     "gh-pages": "^6.3.0",
-    "sass": "^1.83.1",
+    "sass": "1.77.6",
     "vite": "^6.0.7"
   },
   "dependencies": {
