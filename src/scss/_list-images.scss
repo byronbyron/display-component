@@ -1,0 +1,27 @@
+.list-images {
+    @extend .list-unstyled;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem 0.625rem;
+    margin-bottom: 0.5rem;
+
+    li {
+        padding: 0.875rem;
+        border: 1px solid #C1CFD5;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    img {
+        margin-bottom: 0.5rem;
+    }
+
+    h3 {
+        font-size: 0.875rem;
+    }
+}
+
+
