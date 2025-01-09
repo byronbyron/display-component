@@ -1,3 +1,46 @@
 body {
-    padding: 1.5rem;
+    padding: 2.5rem 1.25rem;
+}
+
+.nav-link {
+    text-align: left;
+    border-bottom: 1px solid $border-color;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+    &:first-child {
+        border-top: 1px solid $border-color;
+    }
+
+    &.active::after {
+        content: url("/images/arrow.svg");
+        transform: rotate(90deg) translate(0px, 6px);
+        margin-left: auto;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    body {
+        padding: 6.875rem 1.25rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .nav-link {
+        font-size: 1.1875rem;
+        min-height: 4.25rem;
+        padding: 1.125rem;
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .col-brand-nav {
+        width: auto;
+
+        .nav {
+            width: 446px;
+        }
+    }
 }

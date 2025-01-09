@@ -1,0 +1,12 @@
+.tab-pane h2 {
+    line-height: 1.4;
+    margin-top: 0.25em;
+    margin-bottom: 2rem;
+}
+
+@include media-breakpoint-up(lg) {
+    .tab-pane h2 {
+        font-size: 2.6875rem;
+        margin-top: 0;
+    }
+}
